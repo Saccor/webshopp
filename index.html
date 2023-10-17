@@ -4,40 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Document</title>
+    <title>Sacco's Webbshop</title>
 </head>
 <body>
     <header>
-        <h3>
-            Sacco's Webbshop
-        </h3>
+        <h3>Sacco's Webbshop</h3>
     </header>
     <div class="image-container">
         <p>hello shoppers</p>
         <img alt="bild" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAvJyPjbujiwfPRfZ-_Qe0x0FSJVF7E9FpPGaWlrRi5Q&s" class="bild1">
     </div>
-    <!-- Sidebar -->
-    <div>
-        <div class="frame-set">
-            <div class="frame">
-                <p>hey</p>
-            </div>
-            <div class="frame">
-            </div>
-            <div class="frame">
-            </div>
+    <div class="frame-set">
+        <div class="frame" onclick="toggleSidebar()">
+            <p>hey</p>
         </div>
-        <div class="frame-set">
-            <div class="frame">
-            </div>
-            <div class="frame">
-            </div>
-            <div class="frame">
-            </div>
+        <div class="frame" onclick="toggleSidebar()">
         </div>
-        <script src="index.js"></script>
-        <div class="sidebar">
+        <div class="frame" onclick="toggleSidebar()">
         </div>
-      
+    </div>
+    <div class="frame-set">
+        <div class="frame" onclick="toggleSidebar()">
+        </div>
+        <div class="frame" onclick="toggleSidebar()">
+        </div>
+        <div class="frame" onclick="toggleSidebar()">
+        </div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <div class="cart">
+            <h3>Shopping Cart</h3>
+            <ul id="cart-items">
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+        <button id="toggle-sidebar-button" class="toggle-sidebar-button" onclick="toggleSidebar()">Varukorg</button>
+    </div>    
+    <script src="index.js"></script>
+    <br><br>
+    <footer>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Explore</a></li>
+          <li><a href="#">Favorites</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+        <span>2023 Saqqez</span>
+    </footer>
 </body>
 </html>
